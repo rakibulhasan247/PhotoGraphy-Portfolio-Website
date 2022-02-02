@@ -31,10 +31,10 @@
             <a href="#" class="navbar-brand text-danger fw-bolder">
                 <i class="bi bi-camera"></i> IShoot
             </a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" data-bs-controls="navbar" aria-expanded="false">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-            <div class="collapse navbar-collapse" id="navbar">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="# ">Home</a>
                     <a class="nav-link" href="#Experience">Experience</a>
@@ -57,7 +57,7 @@
                 </h5>
                 <p class="card-text text-secondary mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste expedita voluptatem deleniti ad doloribus distinctio aut consequuntur? Minus, nam aut. Unde illo, at veritatis autem quae explicabo quis.</p>
                 <div class="d-flex flex-sm-row flex-column mt-4">
-                    <button class="btn btn-danger btn-lg shadow" type="button" data-bs-toggle="modal" data-bs-target="#email"><i class="bi bi-envelope"></i> Email Me Here</button>
+                    <button class="btn btn-danger btn-lg shadow" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-envelope"></i> Email Me Here</button>
                     <span class="fs-2 mt-5 mt-sm-0">
                         <a href="https://www.facebook.com/rakibulhasan247/" target="blank"><i class="bi bi-facebook text-dark ms-sm-4 ms-2"></i></a>
                         <a href="https://www.instagram.com/rakibulhasan24.7" target="blank"><i class="bi bi-instagram text-dark ms-sm-3 ms-2"></i></a>
@@ -80,9 +80,89 @@
         </div>
     </header>
     <!--HEADER > FORM -->
-    <div class="modal"></div>
-    <!--HEADER > FORM > TERMS OF SERVICES-->
 
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">BOOK A SHOOT</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="row g-3">
+            <div class="col-md-6">
+                <label for="" class="form-label">First Name</label> 
+                <input type="text" class="form-control" placeholder="John" aria-label="First name">
+              </div>
+              <div class="col-md-6">
+                <label for="" class="form-label">Last Name</label> 
+                <input type="text" class="form-control" placeholder="Smith" aria-label="Last name">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              </div>   
+            
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div> 
+
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                  <label class="form-check-label" for="invalidCheck2">
+                    Agree to <a href="#" class="text-link text-danger" role="button" data-bs-toggle="modal" data-bs-target="#terms_condition">Terms and Conditions</a>
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-danger w-100 my-2" type="submit">Submit</button>
+              </div>
+          </form>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+    <!--HEADER > FORM > TERMS OF SERVICES-->
+    <div class="modal fade" id="terms_condition" tabindex="-1" aria-labelledby="terms_condition" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="terms_condition">Terms and Conditions</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+          <p class="p-2 text-secondary">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id temporibus commodi voluptatem est consequatur facere quo earum optio impedit laborum quaerat, soluta dignissimos repellat fugit itaque ea, ipsam, nobis nostrum voluptates odio fugiat accusamus unde tenetur deserunt. Tenetur libero unde maiores vitae, corrupti, culpa reiciendis voluptatibus a perspiciatis nulla tempore?
+          </p>
+          <p class="p-2 mt-1 text-secondary fw-light">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, veniam nesciunt perspiciatis in neque deleniti minima assumenda, ab ipsam omnis quasi voluptate amet distinctio excepturi.
+        </p>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+
+
+    
     <!--MAIN -->
 
     <!--MAIN > EXPERIENCE -->
@@ -100,7 +180,6 @@
 
     <!-- bootstrap Js File -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.js "></script>
 </body>
 
 </html>
