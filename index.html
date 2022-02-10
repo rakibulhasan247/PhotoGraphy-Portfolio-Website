@@ -26,28 +26,27 @@
 
 
     <!--NAVIGATION -->
- <div class="sticky-top">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a href="#" class="navbar-brand text-danger fw-bolder">
-            <i class="bi bi-camera"></i> IShoot
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <nav class="navbar navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand text-danger fw-bolder">
+                <i class="bi bi-camera"></i> IShoot
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="# ">Home</a>
-                <a class="nav-link" href="#Experience">Experience</a>
-                <a class="nav-link" href="#Portfolio">Portfolio</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link" href="#experience">Experience</a>
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
- </div>
+    </nav>
     <!--HEADER -->
 
-    <header class="row row-col-2 flex-row align-items-center justify-content-center vh-100">
+    <header class="row row-col-2 flex-row align-items-center justify-content-cente viewh">
 
         <div class="col-sm-6 container text-center text-sm-start" style="width:500px">
             <div class="card-header bg-white font-monospace text-secondary">
@@ -85,107 +84,158 @@
 
 
 
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">BOOK A SHOOT</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form action="#" class="row g-3">
-            <div class="col-md-6">
-                <label for="" class="form-label">First Name</label> 
-                <input type="text" class="form-control" placeholder="John" aria-label="First name">
-              </div>
-              <div class="col-md-6">
-                <label for="" class="form-label">Last Name</label> 
-                <input type="text" class="form-control" placeholder="Smith" aria-label="Last name">
-              </div>
-              <div class="col-12">
-                <label for="inputAddress" class="form-label">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-              </div>
-              <div class="col-12">
-                <label for="inputAddress2" class="form-label">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-              </div>   
-            
-              <div class="col-md-6">
-                <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity">
-              </div>
-              <div class="col-md-4">
-                <label for="inputState" class="form-label">State</label>
-                <select id="inputState" class="form-select">
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">BOOK A SHOOT</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" class="row g-3">
+                        <div class="col-md-6">
+                            <label for="" class="form-label">First Name</label>
+                            <input type="text" class="form-control" placeholder="John" aria-label="First name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" placeholder="Smith" aria-label="Last name">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">State</label>
+                            <select id="inputState" class="form-select">
                   <option selected>Choose...</option>
                   <option>...</option>
                 </select>
-              </div>
-              <div class="col-md-2">
-                <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
-              </div> 
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
 
-              <div class="col-12">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                  <label class="form-check-label" for="invalidCheck2">
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
                     Agree to <a href="#" class="text-link text-danger" role="button" data-bs-toggle="modal" data-bs-target="#terms_condition">Terms and Conditions</a>
                   </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-danger w-100 my-2" type="submit">Submit</button>
+                        </div>
+                    </form>
                 </div>
-              </div>
-              <div class="col-12">
-                <button class="btn btn-danger w-100 my-2" type="submit">Submit</button>
-              </div>
-          </form>
+
+            </div>
         </div>
-       
-      </div>
     </div>
-  </div>
 
     <!--HEADER > FORM > TERMS OF SERVICES-->
     <div class="modal fade" id="terms_condition" tabindex="-1" aria-labelledby="terms_condition" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="terms_condition">Terms and Conditions</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="terms_condition">Terms and Conditions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="p-2 text-secondary">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id temporibus commodi voluptatem est consequatur facere quo earum optio impedit laborum quaerat, soluta dignissimos repellat fugit itaque ea, ipsam, nobis nostrum voluptates odio fugiat accusamus
+                        unde tenetur deserunt. Tenetur libero unde maiores vitae, corrupti, culpa reiciendis voluptatibus a perspiciatis nulla tempore?
+                    </p>
+                    <p class="p-2 mt-1 text-secondary fw-light">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, veniam nesciunt perspiciatis in neque deleniti minima assumenda, ab ipsam omnis quasi voluptate amet distinctio excepturi.
+                    </p>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-          <p class="p-2 text-secondary">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id temporibus commodi voluptatem est consequatur facere quo earum optio impedit laborum quaerat, soluta dignissimos repellat fugit itaque ea, ipsam, nobis nostrum voluptates odio fugiat accusamus unde tenetur deserunt. Tenetur libero unde maiores vitae, corrupti, culpa reiciendis voluptatibus a perspiciatis nulla tempore?
-          </p>
-          <p class="p-2 mt-1 text-secondary fw-light">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, veniam nesciunt perspiciatis in neque deleniti minima assumenda, ab ipsam omnis quasi voluptate amet distinctio excepturi.
-        </p>
-
-        <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
         </div>
-      </div>
-    </div> 
-   </div>
-  </div>
- 
+    </div>
 
-
-    
     <!--MAIN -->
+    <main>
+        <!--MAIN > EXPERIENCE -->
+        <section id="experience" class="row flex-row  bg-light align-items-center justify-content-around pb-5">
+            <!--MAIN > EXPERIENCE > TITLE-->
+            <div class="col-sm-6 mt-5 text-center text-sm-start" style="width: 500px">
+                <div class="card-header bg-light font-monospace text-secondary">EXPERIENCE </div>
+                <div class="card-body">
+                    <h5 class="card-title display-1 fw-bold ">I have been capturing memories for the last 10 years</h5>
+                    <p class="card-text text-secondary mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aliquid placeat consectetur doloremque consequatur? Iste molestiae atque commodi! Sit, officia?
+                    </p>
+                </div>
+            </div>
 
-    <!--MAIN > EXPERIENCE -->
+            <!--MAIN > EXPERIENCE > PHOTOS-->
+            <div class="col-sm-6">
+                <div class="row gy-5 row-cols-1 row-cols-md-2 text-center text-sm-start mx-5 mx-sm-0">
+                </div>
+                <!--MAIN > EXPERIENCE > PHOTOS > PORTRAIT-->
+                <div class="col">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <i class="bi bi-camera fs-3 text-danger"></i>
+                            <h5 class="card-title">Portrait Photos</h5>
+                            <p class="card-text">With supporting text below as natural lead-in to additional content.</p>
 
-    <!--MAIN > EXPERIENCE > TITLE-->
+                            <a href="#" class="btn btn-danger" role="button" data-bs-toggle="modal" data-bs-target="#portrait_photos">View Photos</a>
 
-    <!--MAIN > EXPERIENCE > PHOTOS-->
-    <!--MAIN > EXPERIENCE > PHOTOS > PORTRAIT-->
-    <!--MAIN > EXPERIENCE > PHOTOS > TRAVEL-->
-    <!--MAIN > EXPERIENCE > PHOTOS > WEDDING-->
-    <!--MAIN > EXPERIENCE > PHOTOS > NATURE-->
+                            <!--Portrait Modal modal -->
+                            <div class="modal fade" id="portrait_photos" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-center">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Portrait Photos</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- portrait carosal -->
+                                            <div id="portrait_photos" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                </div>
+                                            </div>
 
-    <!--MAIN > EXPERIENCE > PORTFOLIO-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--MAIN > EXPERIENCE > PHOTOS > TRAVEL-->
+                <!--MAIN > EXPERIENCE > PHOTOS > WEDDING-->
+                <!--MAIN > EXPERIENCE > PHOTOS > NATURE-->
+            </div>
+
+
+        </section>
+
+
+        <!--MAIN > EXPERIENCE > PORTFOLIO-->
+    </main>
+
     <!--FOOTER -->
 
     <!-- bootstrap Js File -->
